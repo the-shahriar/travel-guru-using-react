@@ -2,8 +2,8 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 import {Form, Nav, Stack, Button, Container } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
 import logo from '../../assets/logo/Logo.png';
+import { HashLink } from 'react-router-hash-link';
 
 
 const links = {
@@ -11,7 +11,8 @@ const links = {
     'color': 'black',
     'display': 'block',
     'fontSize': '18px',
-    'lineHeight': '40px'
+    'lineHeight': '40px',
+    'padding': '0'
 }
 
 const equal = {
@@ -41,10 +42,10 @@ const Footer = () => {
             <div className="mt-4">
                 <h3>Links</h3>
                 <div className="pt-3">
-                    <NavLink style={links} to="/home">Home</NavLink>
-                    <NavLink style={links} to="/destination">Destination</NavLink>
-                    <NavLink style={links} to="/blog">Blog</NavLink>
-                    <NavLink style={links} to="/contact">Contact</NavLink>
+                    <Nav.Link className="fs-5 text-black" style={links} as={HashLink} to="">Home</Nav.Link>
+                    <Nav.Link className="fs-5 text-black" style={links} as={HashLink} to="/destination">Destination</Nav.Link>
+                    <Nav.Link className="fs-5 text-black" style={links} as={HashLink} to="/blogs">Blog</Nav.Link>
+                    <Nav.Link className="fs-5 text-black" style={links} as={HashLink} to="/contact">Contact</Nav.Link>
                 </div>
             </div>
             <div className="mt-5">

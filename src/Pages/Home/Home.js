@@ -33,7 +33,7 @@ const Home = () => {
   }
 
   return (
-    <Container className="pr-0 mt-5 pt-5">
+    <Container className="pr-0 mt-5 pt-5 hero">
       <Row>
         <Col sm={4} xl={4}>
           <div className="bg-transparent px-0">
