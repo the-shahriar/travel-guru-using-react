@@ -1,0 +1,44 @@
+@media only screen and (max-width: 980px) {
+  .search-input {
+    width: 98% !important;
+  }
+}
+
+.logo {
+  filter: contrast(0) brightness(250%);
+}
+
+.header-section {
+  background-image: url(../../assets/image/Rectangle\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: black;
+  opacity: 0.9;
+  height: 100vh;
+  position: relative;
+}
+
+.header-section::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(41, 41, 40, 0.6);
+}
+
+.hero-section {
+  margin-top: 150px;
+}
+
+.search-input {
+  position: relative;
+}
+
+.search-icon {
+  position: absolute;
+  top: 25%;
+  left: 10px;
+}
