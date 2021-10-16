@@ -1,12 +1,12 @@
 import React from 'react';
 import Header from '../Shared/Header/Header';
-import { BrowserRouter as Router, Switch, Route, useLocation} from 'react-router-dom';
+import { Switch, Route, useLocation} from 'react-router-dom';
 import Home from '../Pages/Home/Home';
-import Blogs from '../Pages/Blogs/Blogs';
 import Login from '../Pages/Login/Login';
 import Contact from '../Pages/Contact/Contact';
 import NotFound from '../Pages/NotFound/NotFound';
 import Footer from '../Shared/Footer/Footer';
+import Register from '../Pages/Register/Register';
 
 const Navigate = () => {
 
@@ -25,6 +25,9 @@ const Navigate = () => {
             </Route>
             <Route path="/login">
               <Login></Login>
+            </Route>
+            <Route path="/register">
+              <Register></Register>
             </Route>
             <Route path="/contact">
               <Contact></Contact>
